@@ -62,11 +62,11 @@ Choose `flow-library` & `TypeScript`
 }
 ```
 
-The bundle is deployed to the cdn (`parastorage`) and should be used from there
+The bundle (`dist/statics` directory) is deployed to the cdn (`parastorage`) and should be used from there
 
-### Why do you support only TypeScript
+### Why does this supports only TypeScript?
 
-In Wix more than 80% of the frontend code is written with `TypeScript`. When creating a reusable library, having types is important for IDE features such a auto-completions and auto-import to work. It also helps preventing mistakes on other `TypeScript` projects that uses the library. It's also important to remember that there is a trade-off regarding maintaining support in multiple different use-cases and this trade-off means that when doing that, we won't be able to invest time deliver more features or make this flow more optimize.
+In Wix more than 80% of the frontend code is written with `TypeScript`. When creating a reusable library, having types is important for IDE features such a auto-completions and auto-import to work. It also helps preventing mistakes on other `TypeScript` projects that uses the library. It's also important to remember that there is a trade-off regarding maintaining support in multiple different use-cases and this trade-off means that when doing that, we won't be able to invest time deliver more features or make this flow more optimize. If you've only worked with JavaScript so far, I suggest you to let it an opportunity and see if it works for you.
 
 ### How can I use a library create by this Flow?
 
@@ -79,11 +79,10 @@ Using the second method also enables the version of the library to be controlled
 
 > Here are some pros and cons
 
-|                                  | from `npm` | form the `cdn` |
+|                                  | from `npm` | from the `cdn` |
 | -------------------------------- | ---------- | -------------- |
 | Consume from a GA\*              | X          | V              |
 | Tree-shake unused code           | V          | X              |
 | Affects app's build time         | V          | X              |
 | Perform dynamic import           | V          | V              |
-| Working with `requirejs`         | X          | V              |
-| Share dependencies with your app | X          | V              |
+| Share dependencies with your app | V          | X              |
