@@ -63,13 +63,17 @@ export function createClientWebpackConfig(
   {
     isDev,
     isHot,
+    suricate,
     isAnalyze,
     forceEmitSourceMaps,
+    forceEmitStats,
   }: {
     isDev?: boolean;
     isHot?: boolean;
+    suricate?: boolean;
     isAnalyze?: boolean;
     forceEmitSourceMaps?: boolean;
+    forceEmitStats?: boolean;
   } = {},
 ): webpack.Configuration {
   const entry = pkg.config.entry || defaultEntry;
@@ -82,8 +86,10 @@ export function createClientWebpackConfig(
     target: 'web',
     isDev,
     isHot,
+    suricate,
     isAnalyze,
     forceEmitSourceMaps,
+    forceEmitStats,
     exportAsLibraryName: pkg.config.exports,
     enhancedTpaStyle: pkg.config.enhancedTpaStyle,
     tpaStyle: pkg.config.tpaStyle,

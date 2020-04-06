@@ -1,5 +1,122 @@
 # Changelog
 
+## 4.55.0 (2020-04-05)
+
+#### :rocket: New Feature
+
+- `jest-yoshi-preset`, `yoshi-config`
+  - [#2186](https://github.com/wix/yoshi/pull/2186) Add the option to override the `globals` object in `e2eOptions` (#2102) ([@lironch](https://github.com/lironch))
+
+#### :building_construction: Templates
+
+- `create-yoshi-app`
+  - [#2192](https://github.com/wix/yoshi/pull/2192) Remove strict implicit compiler options ([@ranyitz](https://github.com/ranyitz))
+  - [#2183](https://github.com/wix/yoshi/pull/2183) Bump `bootstrap-hot-loader` to V4 ([@yanivefraim](https://github.com/yanivefraim))
+
+#### :bug: Bug Fix
+
+- `yoshi-flow-editor`
+  - [#2191](https://github.com/wix/yoshi/pull/2191) [flow-editor] Add `commonjs2` external for lodash. ([@yavorsky](https://github.com/yavorsky))
+
+## 4.54.1 (2020-04-05)
+
+#### :rocket: New Feature
+
+- `create-yoshi-app`, `yoshi-flow-editor-runtime`, `yoshi-flow-editor`
+  - [#2185](https://github.com/wix/yoshi/pull/2185) [editor-flow] Add BoB apps support and allow users override platform hooks ([@yavorsky](https://github.com/yavorsky))
+
+#### :building_construction: Templates
+
+- `create-yoshi-app`
+  - [#2189](https://github.com/wix/yoshi/pull/2189) [server templates]: Update express version ([@alexandervain](https://github.com/alexandervain))
+
+## 4.54.0 (2020-04-02)
+
+#### :rocket: New Feature
+
+- `yoshi-common`, `yoshi-flow-app`, `yoshi-flow-bm`, `yoshi-flow-editor`, `yoshi-flow-legacy`, `yoshi-flow-library`, `yoshi-flow-monorepo`
+  - [#2171](https://github.com/wix/yoshi/pull/2171) Output Webpack stats to a file (`target/webpack-stats.json`) by default on CI ([@Gongreg](https://github.com/Gongreg))
+- `yoshi-common`
+  - [#2170](https://github.com/wix/yoshi/pull/2170) Support bundling `st.css` files in SSR ([@NitayRabi](https://github.com/NitayRabi))
+
+#### :bug: Bug Fix
+
+- `yoshi-flow-editor-runtime`
+  - [#2184](https://github.com/wix/yoshi/pull/2184) Prevent throwing errors for `publicData` getter when value is not loaded yet ([@yavorsky](https://github.com/yavorsky))
+- `yoshi-flow-editor`
+  - [#2177](https://github.com/wix/yoshi/pull/2177) Use `debug: false` value for editor bundles ([@yavorsky](https://github.com/yavorsky))
+
+#### :memo: Documentation
+
+- [#2169](https://github.com/wix/yoshi/pull/2169) add `node-api` doc to the website's sidebar ([@ranyitz](https://github.com/ranyitz))
+
+#### :house: Internal
+
+- `yoshi-flow-bm-runtime`, `yoshi-flow-bm`
+  - [#2173](https://github.com/wix/yoshi/pull/2173) Fix BM `moduleParams` type breakage ([@amitdahan](https://github.com/amitdahan))
+
+## 4.53.3 (2020-04-01)
+
+#### :nail_care: Polish
+
+- `yoshi-flow-legacy`
+  - [#2175](https://github.com/wix/yoshi/pull/2175) Yoshi Server: support yoshi-server for storybook ([@yanivefraim](https://github.com/yanivefraim))
+
+## 4.53.2 (2020-03-31)
+
+#### :bug: Bug Fix
+
+- `yoshi-flow-library`
+  - [#2172](https://github.com/wix/yoshi/pull/2172) add yoshi-flow-library's bin to the package.json's files array ([@ranyitz](https://github.com/ranyitz))
+
+#### :memo: Documentation
+
+- `yoshi-flow-editor`
+  - [#2167](https://github.com/wix/yoshi/pull/2167) feat(yoshi-flow-editor): Add migraiton guide ([@yavorsky](https://github.com/yavorsky))
+
+## 4.53.1 (2020-03-30)
+
+#### :bug: Bug Fix
+
+- `jest-yoshi-preset`
+  - [#2166](https://github.com/wix/yoshi/pull/2166) Yoshi Server: use jest transform on e2e tests ([@yanivefraim](https://github.com/yanivefraim))
+
+#### :nail_care: Polish
+
+- `yoshi-flow-monorepo`
+  - [#2165](https://github.com/wix/yoshi/pull/2165) Fix Suricate configuration for monorepo flow ([@giladsegal](https://github.com/giladsegal))
+
+#### :house: Internal
+
+- [#1974](https://github.com/wix/yoshi/pull/1974) Add missing tests for `yoshi-server-testing` ([@yanivefraim](https://github.com/yanivefraim))
+
+## 4.53.0 (2020-03-27)
+
+#### :rocket: New Feature
+
+- `create-yoshi-app`, `yoshi-flow-editor`
+  - [#2151](https://github.com/wix/yoshi/pull/2151) Add `editorScript` support using `editor.app.ts` entry ([@yavorsky](https://github.com/yavorsky))
+
+#### :bug: Bug Fix
+
+- `yoshi-flow-editor-runtime`
+  - [#2158](https://github.com/wix/yoshi/pull/2158) Fix `ssr` by checking `window` approachability ([@yavorsky](https://github.com/yavorsky))
+- `eslint-config-yoshi-base`, `yoshi-server`
+  - [#2145](https://github.com/wix/yoshi/pull/2145) Update eslint-config-yoshi-base for TS ([@malcolmmadsheep](https://github.com/malcolmmadsheep))
+
+#### :memo: Documentation
+
+- [#2156](https://github.com/wix/yoshi/pull/2156) Fixing the test watch command ([@lironch](https://github.com/lironch))
+
+#### :house: Internal
+
+- `yoshi-common`, `yoshi-helpers`
+  - [#2148](https://github.com/wix/yoshi/pull/2148) Add support for custom cdn certificate ([@amiryonatan](https://github.com/amiryonatan))
+- `create-yoshi-app`, `yoshi-common`, `yoshi-config`, `yoshi-flow-app`, `yoshi-flow-bm`, `yoshi-flow-editor`, `yoshi-flow-library`, `yoshi-flow-monorepo`, `yoshi-server-react`
+  - [#2147](https://github.com/wix/yoshi/pull/2147) Disable no `null` assertion rule in yoshi's codebase ([@ranyitz](https://github.com/ranyitz))
+- `yoshi-common`
+  - [#2142](https://github.com/wix/yoshi/pull/2142) Prevent clearing console when `DEBUG` environment parameter is enabled ([@ranyitz](https://github.com/ranyitz))
+
 ## 4.52.2 (2020-03-23)
 
 #### :bug: Bug Fix
